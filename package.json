@@ -4,7 +4,9 @@
   "description": "Main website of Hopscotch Project LLC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel public/index.html",
+    "build": "rm -rf dist && parcel build public/index.html",
+    "deploy": "npm run build && node scripts/deploy.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/hopscotchproject/website/issues"
   },
-  "homepage": "https://github.com/hopscotchproject/website#readme"
+  "homepage": "https://github.com/hopscotchproject/website#readme",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.1.1",
+    "gh-pages": "^2.2.0",
+    "parcel-bundler": "^1.12.4",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4"
+  }
 }
