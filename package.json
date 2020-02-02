@@ -1,0 +1,19 @@
+{
+  "name": "hopscotch-project-llc-webiste",
+  "version": "1.0.0",
+  "description": "Main website of Hopscotch Project LLC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hopscotchproject/website.git"
+  },
+  "author": "@floydding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hopscotchproject/website/issues"
+  },
+  "homepage": "https://github.com/hopscotchproject/website#readme"
+}
