@@ -13,19 +13,25 @@
     "url": "git+https://github.com/hopscotchproject/website.git"
   },
   "author": "@floydding",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hopscotchproject/website/issues"
   },
   "homepage": "https://github.com/hopscotchproject/website#readme",
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.1.1",
+    "autoprefixer": "^9.7.4",
     "gh-pages": "^2.2.0",
     "parcel-bundler": "^1.12.4",
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
+    "tailwindcss": "^1.1.4",
     "vue": "^2.6.11",
-    "vue-hot-reload-api": "^2.3.4"
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-router": "^3.1.5"
+  },
+  "posthtml": {
+    "recognizeSelfClosing": true
   }
 }

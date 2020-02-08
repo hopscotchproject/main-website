@@ -1,14 +1,15 @@
 <template>
   <div>
-    <router-view name="nav-bar"/>
-    <router-view/>
+    In progress...
   </div>
 </template>
 
 <script>
 export default {
+  
 }
 </script>
 
 <style scoped>
+
 </style>
