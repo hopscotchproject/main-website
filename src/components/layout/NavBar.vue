@@ -1,5 +1,5 @@
 <template>
-  <header class="px-6 lg:px-16 py-2 lg:py-2 bg-white flex flex-wrap items-center">
+  <header class="px-6 lg:px-16 py-2 lg:py-2 bg-white flex flex-wrap items-center shadow">
     <div class="flex flex-1 justify-between items-center">
       <router-link to="/" class="w-6/12 md:w-3/12">
         <img src="/img/name.svg"/>
@@ -21,6 +21,9 @@
 </template>
 
 <script>
+export default {
+  name: 'NavBar'
+}
 </script>
 
 <style scoped>
