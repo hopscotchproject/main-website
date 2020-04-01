@@ -1,10 +1,12 @@
 <template>
   <div class="">
-    <div class="p-6 md:px-24 md:py-16">
+    <div class="p-6 md:px-24 md:pt-16 md:pb-12">
       <div class="py-2 text-gray-600 md:text-2xl font-bold">Hopscotch Project</div>
       <div class="py-2 text-xl md:text-3xl font-bold">Personalized Solution Architecture and Fast Prototyping</div>
       <div class="py-2 md:text-xl text-gray-600">Bootstrap your product with minimal cost, low operational burden and high scalability</div>
-      <router-link to="/portfolio" class="py-2 underline text-sm md:text-base md:pr-8 float-right">check out our portfolio</router-link>
+      <div class="flex justify-center mt-8 md:mt-12">
+        <router-link to="/portfolio" class="px-8 py-3 md:text-lg self-center rounded-full bg-blue-500 font-bold text-white">see portfolio</router-link>
+      </div>
     </div>
     <hr class="m-6 md:mx-24"/>
     <div class="p-6 md:px-24">
