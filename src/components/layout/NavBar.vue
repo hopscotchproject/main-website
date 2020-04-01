@@ -1,19 +1,21 @@
 <template>
-  <header class="px-6 lg:px-16 py-2 lg:py-2 bg-white flex flex-wrap items-center shadow">
-    <div class="flex flex-1 justify-between items-center">
-      <router-link to="/" class="w-6/12 md:w-3/12">
+  <header class="flex flex-col md:flex-row py-4 md:pt-12">
+    <div class="flex w-full">
+      <router-link to="/" class="w-6/12 pl-4 lg:w-4/12 md:pl-24 self-center">
         <img src="/img/name.svg"/>
       </router-link>
+      <div class="flex flex-row-reverse flex-grow md:hidden">
+        <label for="menu-toggle" class="px-4 md:pointer-cursor block self-center float-right">
+          <i class="fas fa-bars text-lg"></i>
+        </label>
+      </div>
     </div>
-    <label for="menu-toggle" class="pointer-cursor lg:hidden block">
-      <img src="/img/hamburger.svg"/>
-    </label>
-    <input class="hidden" type="checkbox" id="menu-toggle"/>
-    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+    <input class="hidden" type="checkbox" id="menu-toggle" v-model="checked"/>
+    <div class="hidden md:flex md:items-center md:w-auto md:pr-8 border-b md:border-none" id="menu">
       <nav>
-        <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
-          <li><router-link class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" to="/portfolio">Portfolio</router-link></li>
-          <li><router-link class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" to="/contacts">Contacts</router-link></li>
+        <ul class="md:flex items-center justify-between text-base text-gray-700 px-4 pt-4 md:pt-0">
+          <li @click="checked = false"><router-link class="text-center md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" to="/portfolio">Portfolio</router-link></li>
+          <li @click="checked = false"><router-link class="text-center md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" to="/contacts">Contacts</router-link></li>
         </ul>
       </nav>
     </div>
@@ -22,7 +24,10 @@
 
 <script>
 export default {
-  name: 'NavBar'
+  name: 'NavBar',
+  data: () => ({
+    checked: false
+  })
 }
 </script>
 
