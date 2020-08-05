@@ -2,7 +2,7 @@
   <header class="flex flex-col md:flex-row py-4 md:pt-12">
     <div class="flex w-full">
       <router-link to="/" class="w-6/12 pl-4 lg:w-4/12 md:pl-24 self-center">
-        <img src="/img/name.svg"/>
+        <logo id="logo"/>
       </router-link>
       <div class="flex flex-row-reverse flex-grow md:hidden">
         <label for="menu-toggle" class="px-4 md:pointer-cursor block self-center float-right">
@@ -23,16 +23,39 @@
 </template>
 
 <script>
+import Logo from '../svg/Logo'
+import anime from 'animejs/lib/anime.es.js';
+
 export default {
   name: 'NavBar',
+  components: {
+    logo: Logo,
+  },
   data: () => ({
     checked: false
-  })
+  }),
+  mounted() {
+    // anime colored circle in logo
+    anime({
+      targets: "circle.cls-2",
+      translateY: -15,
+      direction: 'alternate',
+      duration: 250,
+      loop: true,
+      easing: 'easeInOutQuad',
+      autoplay: true,
+      delay: 2000,
+    })
+  }
 }
 </script>
 
 <style scoped>
 #menu-toggle:checked + #menu {
   display: block;
+}
+
+#logo {
+  overflow: visible;
 }
 </style>>

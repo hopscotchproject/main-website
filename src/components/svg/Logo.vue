@@ -1,0 +1,42 @@
+<template>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.11 42.94">
+<defs>
+</defs>
+<title>Asset 2</title>
+<g id="Layer_2" data-name="Layer 2">
+<g id="Layer_1-2" data-name="Layer 1">
+<line class="cls-1" x1="1.5" y1="1.5" x2="1.5" y2="31.83"/>
+<line class="cls-1" x1="22.5" y1="21.33" x2="22.5" y2="31.83"/>
+<circle class="cls-2" cx="39.5" cy="21.3" r="10.5"/>
+<path class="cls-1" d="M 1.5 21.3 a 10.5 10.5 0 0 1 21 0"/>
+<circle class="cls-1" cx="68.1" cy="21.3" r="10.5"/>
+<line class="cls-1" x1="57.56" y1="21.33" x2="57.56" y2="41.44"/>
+<path class="cls-1" d="M 85.1 25.6 a 10.5 10.5 0 0 0 19.1 0.3 L 85.1 17.1 a 10.5 10.5 0 0 1 18.5 -1.3"/>
+<path class="cls-1" d="M 129.2 27.9 a 10.5 10.5 0 1 1 0.2 -13"/>
+<circle class="cls-1" cx="145.5" cy="21.3" r="10.5"/>
+<path class="cls-1" d="M 173.4 31.8 a 10.5 10.5 0 0 1 -10.5 -10.5"/>
+<line class="cls-1" x1="162.92" y1="21.33" x2="162.92" y2="1.92"/>
+<line class="cls-1" x1="162.92" y1="11.63" x2="168.5" y2="11.63"/>
+<path class="cls-1" d="M 195.5 27.9 a 10.5 10.5 0 1 1 0.2 -13"/>
+<line class="cls-1" x1="203.61" y1="1.92" x2="203.61" y2="31.83"/>
+<path class="cls-1" d="M 224.6 31.8 V 21.3 a 10.5 10.5 0 1 0 -21 0"/></g></g></svg>
+</template>
+
+<style scoped>
+.cls-1{
+  fill:none;
+  stroke:#000;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}.cls-1,
+
+.cls-2{
+  stroke-width:3px;
+}
+
+.cls-2{
+  fill: #3a86ff;
+  stroke: #3a86ff;
+  stroke-miterlimit:10;
+}
+</style>>
